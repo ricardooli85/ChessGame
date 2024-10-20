@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using tabuleiro;
 
-namespace xadrez_console.tabuleiro
+namespace tabuleiro
 {
     class Peca
     {
@@ -15,9 +15,9 @@ namespace xadrez_console.tabuleiro
         public int qteMovimentos { get; protected set; }
         public Tabuleiro tab { get; protected set; }
 
-        public Peca(Posicao posicao, Tabuleiro tab, Cor cor)
+        public Peca(Tabuleiro tab, Cor cor)
         {
-            this.posicao = posicao;
+            this.posicao = null;
             this.tab = tab;
             this.cor = cor;
             qteMovimentos = 0;

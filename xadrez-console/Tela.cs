@@ -1,6 +1,6 @@
 ﻿using System;
 using tabuleiro;
-using xadrez_console.tabuleiro;
+
 
 namespace xadrez_console
 {
@@ -14,16 +14,17 @@ namespace xadrez_console
                 {
                     if (tab.peca(i, j) == null)
                     {
-                        Console.Write("- ")
+                        Console.Write("- ");
                     }
                     else { 
                         Console.Write(tab.peca(i, j) + " "); 
                     }
 
                 }
+                Console.WriteLine();
             }
-            Console.WriteLine();
+            
         }
     }
 }
-}
+
